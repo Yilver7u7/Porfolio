@@ -1,0 +1,57 @@
+---
+const personalImageAlt = "Yilver Garcia"
+
+import Badge from "../Badge.astro"
+import SocialPill from "../SocialPill.astro"
+import GitHub from "./GitHub.astro"
+import LinkedIn from "./LinkedIn.astro"
+import Mail from "./Mail.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/src/assets/perfil.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/yilver-garcia-4550bb219/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Yilver Garcia!
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +1 año de experiencia. <strong
+      >Ingeniero de Informático </strong
+    > de Barrancabermeja, Colombia 🇨🇴. Especializado en el desarrollo Backed.
+    <strong>Entusiasta del Cloud</strong>.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <!-- Boton Contactame -->
+    <SocialPill href="mailto:yilversgg@gmail.com">
+      <Mail class="size-6" />
+      Contáctame
+    </SocialPill>
+    <!-- Boton GitHub -->
+    <SocialPill href="https://github.com/Yilver7u7">
+      <GitHub class="size-6" />
+      GitHub
+    </SocialPill>
+    <!-- Boton LinkdIn -->
+    <SocialPill href="https://www.linkedin.com/in/yilver-garcia-4550bb219/">
+      <LinkedIn class="size-6" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>

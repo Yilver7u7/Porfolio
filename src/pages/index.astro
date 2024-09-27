@@ -1,15 +1,14 @@
 ---
-import Badge from '../components/Badge.astro';
 import Experience from '../components/Experience.astro';
-import GitHubIcon from '../components/icons/GitHub.astro';
-import LinkendinIcon from '../components/icons/Linkendin.astro';
-import MailIcon from '../components/icons/Mail.astro';
-import SocialPill from '../components/SocialPill.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
-import BriefCase from '../components/icons/BriefCase.astro';
 import TitleSection from '../components/TitleSection.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Profile from '../components/icons/Profile.astro';import BriefCase from '../components/icons/BriefCase.astro';
+import Code from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
+;
 
 ---
 
@@ -23,56 +22,28 @@ description='Contacta me para desarrollar o programar aplicaciones web o movil'
 
 		
 		<SectionContainer class="py-44 pb-24">
-			<img 
-			class="rounded-full size-12 mb-4" 
-			src="/src/assets/foto.jpg" 
-			alt="Foto Yilver">
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">Hey, Soy Yilver
-				<a class="flex justify-center items-center"
-				href="https://www.linkedin.com/in/yilver-garcia-4550bb219/" 
-				target="_blank"
-				rel="noopener"><Badge>Disponible para trabajar</Badge></a></h1>
-			<h2 class="text-2xl text-wrap">
-				<span class="text-white">+3 años de experiencia.</span><span class="opacity-80"> Porfolio.</span> 
-				<span class="text-yellow-100/90 ">De Barrancabermeja, Colombia</span> 🇨🇴. 
-				<span class="text-red-200/90">
-				Me especializo en el area Backend,</span>
-				<span class="opacity-85">entusiasta del Cloud</span> 
-			</h2>
-	
-			<!-- Iconos -->
-			 <nav class="flex gap-x-4 mt-8">
-				<!-- LinkenIn Icon -->
-				<SocialPill href="https://www.linkedin.com/in/yilver-garcia-4550bb219/">
-					<LinkendinIcon class="siza-6"/>
-					LinkedIn
-				</SocialPill>
-
-					<!--GitHub Icon  -->
-				<SocialPill href="https://github.com/Yilver7u7">
-					<GitHubIcon class="siza-6"/>
-					GitHub
-				</SocialPill>	
-
-				<!--Instagram Gmail  -->
-				<SocialPill href="https://github.com/Yilver7u7">
-					<MailIcon class="siza-6"/>
-					Contacta me
-				</SocialPill>	
-
-			 </nav>
-					
-
+			 <Profile></Profile>
 		</SectionContainer>
 
 		<!-- Experience -->
-		<SectionContainer id="experiencia">
+		 <!-- TODO -->
+		<!-- <SectionContainer id="experiencia">
 			<TitleSection>
-			  <BriefCase class="size-8" />
+			  <BriefCase class="size-8"/>
 			  Experiencia laboral
 			</TitleSection>
 			<Experience />
-		  </SectionContainer>
+		  </SectionContainer> -->
+ 
+<!--		  <SectionContainer id="proyectos">
+			<TitleSection>
+			  <Code class="size-7" />
+			  Proyectos
+			</TitleSection>
+			<Projects />
+		  </SectionContainer> -->
+
+      <Footer></Footer>
 
 	</main>
 </Layout>
