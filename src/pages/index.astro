@@ -1,20 +1,28 @@
 ---
 import Badge from '../components/Badge.astro';
-import GitHubIcon from '../components/icons/GitHubIcon.astro';
-import LinkendinIcon from '../components/icons/LinkendinIcon.astro';
-import MailIcon from '../components/icons/MailIcon.astro';
+import Experience from '../components/Experience.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import LinkendinIcon from '../components/icons/Linkendin.astro';
+import MailIcon from '../components/icons/Mail.astro';
 import SocialPill from '../components/SocialPill.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
+import BriefCase from '../components/icons/BriefCase.astro';
+import TitleSection from '../components/TitleSection.astro';
+import Header from '../components/Header.astro';
 
 ---
 
 <Layout title="Porfolio de Yilver Garcia - Software Developer"
 description='Contacta me para desarrollar o programar aplicaciones web o movil'
 >
+
+<Header/>
+	
 	<main>
 
 		
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<SectionContainer class="py-44 pb-24">
 			<img 
 			class="rounded-full size-12 mb-4" 
 			src="/src/assets/foto.jpg" 
@@ -55,7 +63,16 @@ description='Contacta me para desarrollar o programar aplicaciones web o movil'
 			 </nav>
 					
 
-		</section>
+		</SectionContainer>
+
+		<!-- Experience -->
+		<SectionContainer id="experiencia">
+			<TitleSection>
+			  <BriefCase class="size-8" />
+			  Experiencia laboral
+			</TitleSection>
+			<Experience />
+		  </SectionContainer>
 
 	</main>
 </Layout>
