@@ -1,21 +1,22 @@
 ---
 import Badge from '../components/Badge.astro';
 import GitHubIcon from '../components/icons/GitHubIcon.astro';
-import InstagramIcon from '../components/icons/InstagramIcon.astro';
 import LinkendinIcon from '../components/icons/LinkendinIcon.astro';
-import Linkendin from '../components/icons/LinkendinIcon.astro';
+import MailIcon from '../components/icons/MailIcon.astro';
 import SocialPill from '../components/SocialPill.astro';
 import Layout from '../layouts/Layout.astro';
 
 ---
 
-<Layout title="Yilver Garcia">
+<Layout title="Porfolio de Yilver Garcia - Software Developer"
+description='Contacta me para desarrollar o programar aplicaciones web o movil'
+>
 	<main>
 
 		
 		<section class="w-full lg:w-[740px] mx-auto py-44">
 			<img 
-			class="rounded-full w-16 h-16 mb-4" 
+			class="rounded-full size-12 mb-4" 
 			src="/src/assets/foto.jpg" 
 			alt="Foto Yilver">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">Hey, Soy Yilver
@@ -32,23 +33,23 @@ import Layout from '../layouts/Layout.astro';
 			</h2>
 	
 			<!-- Iconos -->
-			 <nav class="flex gap-x-2">
+			 <nav class="flex gap-x-4 mt-8">
 				<!-- LinkenIn Icon -->
 				<SocialPill href="https://www.linkedin.com/in/yilver-garcia-4550bb219/">
-					<LinkendinIcon class="w-6 h-6"/>
+					<LinkendinIcon class="siza-6"/>
 					LinkedIn
 				</SocialPill>
 
 					<!--GitHub Icon  -->
 				<SocialPill href="https://github.com/Yilver7u7">
-					<GitHubIcon class="w-6 h-6"/>
+					<GitHubIcon class="siza-6"/>
 					GitHub
 				</SocialPill>	
 
-				<!--Instagram Icon  -->
+				<!--Instagram Gmail  -->
 				<SocialPill href="https://github.com/Yilver7u7">
-					<InstagramIcon class="w-6 h-6"/>
-					GitHub
+					<MailIcon class="siza-6"/>
+					Contacta me
 				</SocialPill>	
 
 			 </nav>
