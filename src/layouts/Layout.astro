@@ -5,7 +5,7 @@ import Header from '../components/Header.astro';
 
 
 interface Props {
-	title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
@@ -13,36 +13,36 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Header/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+        <Header/>
 
-		<slot />
-	</body>
+        <slot />
+    </body>
 </html>
 
 <style is:global>
-	:root {
-		/* Colores por defecto que el ordenador esta manejando */
-		color-scheme: light dark;	
-	}
-	html {
-		font-family: 'Onest Variable', system-ui, sans-serif;
-	}
+    :root {
+        /* Colores por defecto que el ordenador esta manejando */
+        color-scheme: light dark;	
+    }
+    html {
+        font-family: 'Onest Variable', system-ui, sans-serif;
+    }
 
-	body{
-		background: #151515;
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+    body{
+        background: #151515;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
 
 
