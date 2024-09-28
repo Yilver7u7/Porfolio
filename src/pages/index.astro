@@ -1,41 +1,35 @@
 ---
+import BriefCase from '../components/icons/BriefCase.astro';
 import Experience from '../components/Experience.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import Layout from '../layouts/Layout.astro';
-import TitleSection from '../components/TitleSection.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Profile from '../components/icons/Profile.astro';import BriefCase from '../components/icons/BriefCase.astro';
-import Code from '../components/icons/Code.astro';
-import Projects from '../components/Projects.astro';
+import Layout from '../layouts/Layout.astro';
+import Profile from '../components/icons/Profile.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import TitleSection from '../components/TitleSection.astro';
 ;
 
 ---
 
 <Layout title="Porfolio de Yilver Garcia - Software Developer"
 description='Contacta me para desarrollar o programar aplicaciones web o movil'
->
-
-<Header/>
-	
+>	
 	<main>
 
-		
 		<SectionContainer class="py-44 pb-24">
 			 <Profile></Profile>
 		</SectionContainer>
 
 		<!-- Experience -->
 		 <!-- TODO -->
-		<!-- <SectionContainer id="experiencia">
+		<SectionContainer id="experiencia">
 			<TitleSection>
 			  <BriefCase class="size-8"/>
 			  Experiencia laboral
 			</TitleSection>
 			<Experience />
-		  </SectionContainer> -->
+		  </SectionContainer>
  
-<!--		  <SectionContainer id="proyectos">
+		  <!-- <SectionContainer id="proyectos">
 			<TitleSection>
 			  <Code class="size-7" />
 			  Proyectos
