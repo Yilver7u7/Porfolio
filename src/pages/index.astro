@@ -8,6 +8,8 @@ import SectionContainer from '../components/SectionContainer.astro';
 import TitleSection from '../components/TitleSection.astro';
 import Code from '../components/icons/Code.astro';
 import Projects from '../components/Projects.astro';
+import ProfileCheck from '../components/icons/ProfileCheck.astro';
+import AboutMe from '../components/AboutMe.astro';
 ;
 
 ---
@@ -37,6 +39,14 @@ description='Contacta me para desarrollar o programar aplicaciones web o movil'
 			  Proyectos
 			</TitleSection>
 			<Projects />
+		  </SectionContainer>
+
+		  <SectionContainer id="sobre-mi">
+			<TitleSection>
+			  <ProfileCheck class="size-8" />
+			  Sobre mí
+			</TitleSection>
+			<AboutMe />
 		  </SectionContainer>
 
       <Footer></Footer>
